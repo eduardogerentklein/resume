@@ -46,13 +46,26 @@ export default function Resume() {
   const knowledge = {
     "knowledges": [
       {
-        'Languages': { text: 'Languages', value: 'Javascript, C#, C++, C' },
-        'Databases': { text: 'Databases', value: 'SQL Server' },
-        'Libs': { text: 'Libs / Frameworks', value: 'ReactJS, Nextjs, VueJS, Vuetify, Vuex, NodeJS' },
-        'Platforms': { text: 'Platforms and Tools', value: 'AWS (Lambda, S3) Git, Heroku, Azure' },
-        'Others': { text: 'Others', value: 'CI/CD, APIs REST, Scrum, Kanban, Robotic, Arduino' }
+        "name": "Languages",
+        "description": "Javascript, C#, C++, C"
+      },
+      {
+        "name": "Databases",
+        "description": "SQL Server"
+      },
+      {
+        "name": "Libs / Frameworks",
+        "description": "ReactJS, Nextjs, VueJS, Vuetify, Vuex, NodeJS"
+      },
+      {
+        "name": "Platforms and Tools",
+        "description": "AWS (Lambda, S3) Git, Heroku, Azure"
+      },
+      {
+        "name": "Others",
+        "description": "CI/CD, APIs REST, Scrum, Kanban, Robotic, Arduino"
       }
-    ]
+    ] 
   }
 
   const loveWork = {
@@ -108,9 +121,9 @@ export default function Resume() {
         </section>
         <section className="flex flex-col mt-8">
           <Subtitle>Knowledge</Subtitle>
-          {Object.entries(knowledge.knowledges[0]).forEach(([key, v]) => (
-            <div key={v.text} className="flex flex-col mt-4 space-y-3">
-              <Paragraph>{v.text}: {v.value}</Paragraph>
+          {knowledge.knowledges.map(item => (
+            <div key={item.name} className="flex flex-col mt-4 space-y-3">
+              <Paragraph>{item.name}: {item.description}</Paragraph>
             </div>
           ))}
         </section>
