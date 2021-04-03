@@ -2,7 +2,7 @@ import { Moon } from 'react-feather';
 
 const Footer = ({ children }) => {
   return (
-    <footer className="max-w-screen-lg mt-12 mx-auto px-6">
+    <footer className="max-w-screen-lg my-12 mx-auto px-6">
       <nav className="flex items-center justify-center space-x-6 text-gray-600 dark:text-gray-300">
         { children }
       </nav>

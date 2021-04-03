@@ -9,7 +9,7 @@ import Link from 'next/link'
 
 export default function Resume() {
   const personal = {
-    "title": "Resumo do Eduardo",
+    "title": "Eduardo's Resume",
     "name": "Eduardo Gerent Klein",
     "address": "Joinville, SC, Brazil",
     "email": "eduardo.gklein@gmail.com",
@@ -17,7 +17,7 @@ export default function Resume() {
       {
         "name": "LinkedIn",
         "href": "https://www.linkedin.com/in/eduardoklein",
-        "description": "esse é meu linkedin"
+        "description": null
       },
       {
         "name": "Github",
@@ -26,7 +26,7 @@ export default function Resume() {
       }
     ],
     "personalIntros": [
-      "I have a experience ranging React, React Native, AngularJS to doing stuffs in backend with NodeJS, Python.",
+      "I have a experience ranging VueJS, AngularJS, to doing stuffs in backend with C#.",
       "I'm interested in design systems, a11y, JAMstack, core engineering, UX/DX and good environments (folks)."
     ]
   }
@@ -55,7 +55,7 @@ export default function Resume() {
       },
       {
         "name": "Libs / Frameworks",
-        "description": "ReactJS, Nextjs, VueJS, Vuetify, Vuex, NodeJS"
+        "description": "ReactJS, Nextjs, VueJS, Vuetify, Vuex, NodeJS, .NET Framework, .NET Core"
       },
       {
         "name": "Platforms and Tools",
@@ -75,7 +75,7 @@ export default function Resume() {
   return (
     <>
       <Head>
-        <title>Eduardo Klein - Resume</title>
+        <title>Eduardo's Resume</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <main>
@@ -123,7 +123,7 @@ export default function Resume() {
           <Subtitle>Knowledge</Subtitle>
           {knowledge.knowledges.map(item => (
             <div key={item.name} className="flex flex-col mt-4 space-y-3">
-              <Paragraph>{item.name}: {item.description}</Paragraph>
+              <Paragraph>{item.name}: <Description>{item.description}</Description></Paragraph>
             </div>
           ))}
         </section>
