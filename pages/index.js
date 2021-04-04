@@ -7,7 +7,7 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>Eduardo Klein - About</title>
+        <title>Eduardo Gerent Klein - Interested in design systems, design patterns and JAMstack.</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <main>
