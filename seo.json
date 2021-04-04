@@ -1,0 +1,18 @@
+{
+  "title": "Eduardo Gerent Klein",
+  "titleTemplate": "%s - Eduardo Gerent Klein - Interested in design systems, design patterns and JAMstack.",
+  "description": "Code, biking, travel and games. Eduardo Gerent Klein - Interested in design systems, design patterns and JAMstack.",
+  "openGraph": {
+    "type": "website",
+    "locale": "en_IE",
+    "url": "http://eduardoklein.com/",
+    "site_name": "Eduardo Gerent Klein",
+    "title": "Eduardo Gerent Klein",
+    "titleTemplate": "Code, biking, travel and games. Eduardo Gerent Klein - Interested in design systems, design patterns and JAMstack."
+  },
+  "twitter": {
+    "handle": "@Klein1Eduardo",
+    "site": "@Klein1Eduardo",
+    "cardType": "summary_large_image"
+  }
+}

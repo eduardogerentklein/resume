@@ -75,7 +75,7 @@ export default function Resume() {
   return (
     <>
       <Head>
-        <title>Eduardo Klein - Resume</title>
+        <title>Eduardo Gerent Klein - Resume</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <main>
