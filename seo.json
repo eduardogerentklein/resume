@@ -1,6 +1,6 @@
 {
   "title": "Eduardo Gerent Klein",
-  "titleTemplate": "%s - Eduardo Gerent Klein - Interested in design systems, design patterns and JAMstack.",
+  "titleTemplate": "%s - Interested in design systems, design patterns and JAMstack.",
   "description": "Code, biking, travel and games. Interested in design systems, design patterns and JAMstack.",
   "openGraph": {
     "type": "website",
@@ -11,7 +11,7 @@
     "titleTemplate": "Code, biking, travel and games. Eduardo Gerent Klein - Interested in design systems, design patterns and JAMstack.",
     "images": [
       {
-        "url": "https://eduardoklein.com/logo.png",
+        "url": "https://eduardoklein.com/images/logo.png",
         "width": 512,
         "height": 512,
         "alt": "Eduardo Gerent Klein Logo"

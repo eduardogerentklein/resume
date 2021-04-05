@@ -5,14 +5,14 @@ import Layout from '../components/Layout.js'
 import configSeo from '../seo.json';
 
 import { DefaultSeo } from 'next-seo';
+import Router from 'next/router'; 
+import withGA from 'next-ga'
 
-function MyApp({ Component, pageProps }) {
-  return (
-    <Layout>
-      <DefaultSeo {...configSeo} />
-      <Component {...pageProps} />
-    </Layout>
-  )
-}
+const App = ({ Component, pageProps }) => (
+  <Layout>
+    <DefaultSeo {...configSeo} />
+    <Component {...pageProps} />
+  </Layout>
+)
 
-export default MyApp
+export default withGA('G-Z7GPFKQDC2', Router)(App);
