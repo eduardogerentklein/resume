@@ -43,6 +43,28 @@ export default function Resume() {
     ]
   }
 
+  const experience = {
+    "title": "Experience",
+    "companies": [
+      {
+        "name": "Docspider Software S.A",
+        "city": "Joinville, SC, Brazil",
+        "position": "Full stack Developer",
+        "year": "2018 / 2020",
+        "companyDescription": `Docspider is a consolidated company specializing in technologies and 
+          services for regulatory governance, compliance, document management, etc.`
+      },
+      {
+        "name": "Fulltech LTDA",
+        "city": "Joinville, SC, Brazil",
+        "position": "Full stack Developer",
+        "year": "2020 / current",
+        "companyDescription": `Fulltech is a Fintech focused on the development and
+         application of financial solutions for companies and entrepreneurs.`
+      }
+    ]
+  }
+
   const knowledge = {
     "knowledges": [
       {
@@ -68,8 +90,27 @@ export default function Resume() {
     ] 
   }
 
+  const language = {
+    "languages": [
+      {
+        "name": "Portuguese",
+        "description": "Native"
+      },
+      {
+        "name": "English",
+        "description": "intermediary r/w"
+      }
+    ] 
+  }
+
   const loveWork = {
-    "title": ""
+    "title": "Love working with",
+    "text": "Front end development, design systems, UI components, a11y, performance first, JAMstack, UX principles, CI/CD"
+  }
+
+  const alsoLike = {
+    "title": "Also Like",
+    "text": "Full stack development"
   }
 
   return (
@@ -119,9 +160,43 @@ export default function Resume() {
             </>
           ))}
         </section>
+        <section className="mt-10">
+          <Subtitle>{loveWork.title}</Subtitle>
+          <div className="flex mt-4 space-x-3">
+            <Paragraph>{loveWork.text}</Paragraph>
+          </div>
+        </section>
+        <section className="mt-10">
+          <Subtitle>{alsoLike.title}</Subtitle>
+          <div className="flex mt-4 space-x-3">
+            <Paragraph>{alsoLike.text}</Paragraph>
+          </div>
+        </section>
         <section className="flex flex-col mt-8">
           <Subtitle>Knowledge</Subtitle>
           {knowledge.knowledges.map(item => (
+            <div key={item.name} className="flex flex-col mt-4 space-y-3">
+              <Paragraph>{item.name}: <Description>{item.description}</Description></Paragraph>
+            </div>
+          ))}
+        </section>
+        <section className="flex flex-col mt-8">
+          <Subtitle>Experience</Subtitle>
+          {experience.companies.map((company, index) => (
+            <>
+              <div key={company.name} className="flex mt-4 space-x-3">
+                <Paragraph>{company.position} <Description>/ {company.name} / {company.city}</Description></Paragraph>
+              </div>
+              <ul key={company.companyDescription} className="space-y-2 mt-3 ml-10">
+                <ListItem>{company.companyDescription}</ListItem>
+                <ListItem>{company.year}</ListItem>
+              </ul>
+            </>
+          ))}
+        </section>
+        <section className="flex flex-col mt-8">
+          <Subtitle>Language</Subtitle>
+          {language.languages.map(item => (
             <div key={item.name} className="flex flex-col mt-4 space-y-3">
               <Paragraph>{item.name}: <Description>{item.description}</Description></Paragraph>
             </div>
