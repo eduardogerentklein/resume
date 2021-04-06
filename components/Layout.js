@@ -18,13 +18,13 @@ const Layout = ({ children,  }) => {
 				{ children }
 			</div>
 			<Footer>
-				<Link href="https://www.github.com/">
+				<Link href="https://www.github.com/eduardogerentklein">
 					<GitHub className="cursor-pointer hover:text-gray-700" size={20} />
 				</Link>
-				<Link href="https://www.linkedin.com/">
+				<Link href="https://www.linkedin.com/in/eduardoklein/">
 					<Linkedin className="cursor-pointer hover:text-gray-700" size={20} />
 				</Link>
-				<Link href="https://www.twitter.com/">
+				<Link href="https://www.twitter.com/Klein1Eduardo">
 					<Twitter className="cursor-pointer hover:text-gray-700" size={20} />
 				</Link>
 			</Footer>
