@@ -14,7 +14,7 @@ const Layout = ({ children,  }) => {
 	]
 
   return (
-    <ThemeProvider attribute="class" className="bg-gray-50 dark:bg-gray-900">
+    <ThemeProvider attribute="class">
 			<Navigation anchors={anchors} />
 			<div className="max-w-screen-md mx-auto px-4 md:px-8">
 				{ children }
