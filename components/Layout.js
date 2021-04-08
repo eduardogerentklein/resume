@@ -5,6 +5,8 @@ import { Twitter, Linkedin, GitHub } from 'react-feather';
 
 import Link from 'next/link'
 
+import { ThemeProvider } from 'next-themes'
+
 const Layout = ({ children,  }) => {
 	const anchors = [
 		{ name: 'About', route: '/' },
@@ -12,7 +14,7 @@ const Layout = ({ children,  }) => {
 	]
 
   return (
-    <>
+    <ThemeProvider attribute="class" className="bg-gray-50 dark:bg-gray-900">
 			<Navigation anchors={anchors} />
 			<div className="max-w-screen-md mx-auto px-4 md:px-8">
 				{ children }
@@ -28,7 +30,7 @@ const Layout = ({ children,  }) => {
 					<Twitter className="cursor-pointer hover:text-gray-700" size={20} />
 				</Link>
 			</Footer>
-		</>
+		</ThemeProvider>
   )
 }
 

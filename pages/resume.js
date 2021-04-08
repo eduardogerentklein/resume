@@ -121,7 +121,7 @@ export default function Resume() {
       </Head>
       <main>
         <Title>{personal.title}</Title>
-        <section className="mt-10">
+        <section className="mt-8">
           <div className="space-y-3">
             <Paragraph>{personal.name}</Paragraph>
             <Paragraph>{personal.address}</Paragraph>
@@ -131,7 +131,7 @@ export default function Resume() {
             {personal.links.map((link, index) => (
               <div key={index} className="flex items-center space-x-1">
                 <Link href={link.href}>
-                  <a className="hover:bg-gray-200 rounded-md p-2 dark:bg-gray-00">
+                  <a className="hover:bg-gray-200 dark:hover:bg-gray-700 rounded-md p-2 dark:bg-gray-00">
                     <Paragraph>{link.name}</Paragraph>
                   </a>
                 </Link>
@@ -160,13 +160,13 @@ export default function Resume() {
             </>
           ))}
         </section>
-        <section className="mt-10">
+        <section className="mt-8">
           <Subtitle>{loveWork.title}</Subtitle>
           <div className="flex mt-4 space-x-3">
             <Paragraph>{loveWork.text}</Paragraph>
           </div>
         </section>
-        <section className="mt-10">
+        <section className="mt-8">
           <Subtitle>{alsoLike.title}</Subtitle>
           <div className="flex mt-4 space-x-3">
             <Paragraph>{alsoLike.text}</Paragraph>
