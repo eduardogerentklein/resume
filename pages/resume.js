@@ -7,112 +7,15 @@ import ListItem from '../components/ListItem.js'
 import Head from 'next/head'
 import Link from 'next/link'
 
+import language from '../data/language'
+import personal from '../data/personal'
+import education from '../data/education'
+import experience from '../data/experience'
+import knowledge from '../data/knowledge'
+import loveWork from '../data/loveWork'
+import alsoLike from '../data/alsoLike'
+
 export default function Resume() {
-  const personal = {
-    "title": "Eduardo's Resume",
-    "name": "Eduardo Gerent Klein",
-    "address": "Joinville, SC, Brazil",
-    "email": "eduardo.gklein@gmail.com",
-    "links": [
-      {
-        "name": "LinkedIn",
-        "href": "https://www.linkedin.com/in/eduardoklein",
-        "description": null
-      },
-      {
-        "name": "Github",
-        "href": "https://www.github.com/eduardogerentklein",
-        "description":  null
-      }
-    ],
-    "personalIntros": [
-      "I have a experience ranging VueJS, AngularJS, to doing stuffs in backend with C#.",
-      "I'm interested in design systems, a11y, JAMstack, core engineering, UX/DX and good environments (folks)."
-    ]
-  }
-
-  const education = {
-    "title": "Education",
-    "institutes": [
-      {
-        "name": "Centro Universitário - Católica de Santa Catarina",
-        "city": "Joinville, SC, Brazil",
-        "course": "Software Engineering",
-        "year": "2017 / 2021"
-      }
-    ]
-  }
-
-  const experience = {
-    "title": "Experience",
-    "companies": [
-      {
-        "name": "Docspider Software S.A",
-        "city": "Joinville, SC, Brazil",
-        "position": "Full stack Developer",
-        "year": "2018 / 2020",
-        "companyDescription": `Docspider is a consolidated company specializing in technologies and 
-          services for regulatory governance, compliance, document management, etc.`
-      },
-      {
-        "name": "Fulltech LTDA",
-        "city": "Joinville, SC, Brazil",
-        "position": "Full stack Developer",
-        "year": "2020 / current",
-        "companyDescription": `Fulltech is a Fintech focused on the development and
-         application of financial solutions for companies and entrepreneurs.`
-      }
-    ]
-  }
-
-  const knowledge = {
-    "knowledges": [
-      {
-        "name": "Languages",
-        "description": "Javascript, C#, C++, C"
-      },
-      {
-        "name": "Databases",
-        "description": "SQL Server"
-      },
-      {
-        "name": "Libs / Frameworks",
-        "description": "ReactJS, Nextjs, VueJS, Vuetify, Vuex, NodeJS, .NET Framework, .NET Core"
-      },
-      {
-        "name": "Platforms and Tools",
-        "description": "AWS (Lambda, S3) Git, Heroku, Azure"
-      },
-      {
-        "name": "Others",
-        "description": "CI/CD, APIs REST, Scrum, Kanban, Robotic, Arduino"
-      }
-    ] 
-  }
-
-  const language = {
-    "languages": [
-      {
-        "name": "Portuguese",
-        "description": "Native"
-      },
-      {
-        "name": "English",
-        "description": "intermediary r/w"
-      }
-    ] 
-  }
-
-  const loveWork = {
-    "title": "Love working with",
-    "text": "Front end development, design systems, UI components, a11y, performance first, JAMstack, UX principles, CI/CD"
-  }
-
-  const alsoLike = {
-    "title": "Also Like",
-    "text": "Full stack development"
-  }
-
   return (
     <>
       <Head>

@@ -8,7 +8,7 @@ import { Moon } from 'react-feather';
 import { Sun } from 'react-feather';
 
 const Navigation = ({ anchors }) => {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(false)
   const { theme, setTheme } = useTheme()
   const onClick = () => {
     setDarkMode(!darkMode)
