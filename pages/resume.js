@@ -7,6 +7,8 @@ import ListItem from '../components/ListItem.js'
 import Head from 'next/head'
 import Link from 'next/link'
 
+import language from '../data/language.json'
+
 export default function Resume() {
   const personal = {
     "title": "Eduardo's Resume",
@@ -86,19 +88,6 @@ export default function Resume() {
       {
         "name": "Others",
         "description": "CI/CD, APIs REST, Scrum, Kanban, Robotic, Arduino"
-      }
-    ] 
-  }
-
-  const language = {
-    "languages": [
-      {
-        "name": "Portuguese",
-        "description": "Native"
-      },
-      {
-        "name": "English",
-        "description": "intermediary r/w"
       }
     ] 
   }
