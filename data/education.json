@@ -1,0 +1,11 @@
+{
+  "title": "Education",
+  "institutes": [
+    {
+      "name": "Centro Universitário - Católica de Santa Catarina",
+      "city": "Joinville, SC, Brazil",
+      "course": "Software Engineering",
+      "year": "2017 / 2021"
+    }
+  ]
+}
