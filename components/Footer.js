@@ -1,5 +1,3 @@
-import { Moon } from 'react-feather';
-
 const Footer = ({ children }) => {
   return (
     <footer className="max-w-screen-lg my-12 mx-auto px-6">
