@@ -2,10 +2,10 @@ import Title from '../components/Title.js'
 import Subtitle from '../components/Subtitle.js'
 import Paragraph from '../components/Paragraph.js'
 import Description from '../components/Description.js'
+import LinkButton from '../components/LinkButton.js'
 import ListItem from '../components/ListItem.js'
 
 import Head from 'next/head'
-import Link from 'next/link'
 
 import language from '../data/language'
 import personal from '../data/personal'
@@ -30,19 +30,12 @@ export default function Resume() {
             <Paragraph>{personal.address}</Paragraph>
             <Paragraph>{personal.email}</Paragraph>
           </div>
-          <div className="flex flex-col mt-6 space-y-3">
-            {personal.links.map((link, index) => (
-              <div key={index} className="flex items-center space-x-1">
-                <Link href={link.href}>
-                  <a className="hover:bg-gray-200 dark:hover:bg-gray-700 rounded-md p-2 dark:bg-gray-00">
-                    <Paragraph>{link.name}</Paragraph>
-                  </a>
-                </Link>
-                {link.description && <Description>{link.description}</Description>}
-              </div>
+          <div className="flex flex-col mt-3">
+            {personal.links.map(link => (
+              <LinkButton link={link} />
             ))}
           </div>
-          <div className="flex flex-col mt-6 space-y-2">
+          <div className="flex flex-col mt-3 space-y-3">
             {personal.personalIntros.map((personalIntro, index) => (
               <Paragraph key={index}>{personalIntro}</Paragraph>
             ))}

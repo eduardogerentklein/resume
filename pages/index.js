@@ -1,5 +1,6 @@
 import Title from '../components/Title.js'
 import Paragraph from '../components/Paragraph.js'
+import Link from 'next/link'
 
 import Head from 'next/head'
 
@@ -14,15 +15,19 @@ export default function About() {
         <Title>Hi, I'm Eduardo Gerent Klein</Title>
         <div className="mt-8 space-y-2">
           <Paragraph>
-            I am a software developer from Joinville, Brazil. 
+            I am a Software Engineer from Joinville, Brazil. 
             I studied Software Engineering at PUC - SC.
           </Paragraph>
           <Paragraph>
-            Always building something (one day it will be a company). I like to code, 
-            biking and running. Interested in design systems, a11y and JAMstack.
+            I like to code, biking and hiking. I'm interested in design systems, a11y and JAMstack.
           </Paragraph>
           <Paragraph>
-            This is where I write about me and share my resume.
+            This is where I write about me and share 
+            <Link href="/resume">
+              <a className="hover:bg-gray-200 dark:hover:bg-gray-700 rounded-md p-1 dark:bg-gray-00">
+                my resume.
+              </a>
+            </Link>
           </Paragraph>
         </div>
       </main>
