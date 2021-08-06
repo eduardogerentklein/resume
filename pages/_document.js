@@ -10,6 +10,10 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
+          <link rel="icon" href="../../images/logo.png" />
+          <link rel="alternate icon" href="../../images/logo.png" />
+          <link rel="mask-icon" href="../../images/logo.png" color="#1a202c" />
+
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
             href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
