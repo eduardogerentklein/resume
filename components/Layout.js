@@ -1,13 +1,12 @@
 import Navigation from './Navigation.js'
 import Footer from './Footer.js'
 
-import { Twitter, Linkedin, GitHub } from 'react-feather';
+import { Twitter, Linkedin, GitHub } from 'react-feather'
 
 import Link from 'next/link'
-
 import { ThemeProvider } from 'next-themes'
 
-const Layout = ({ children,  }) => {
+const Layout = ({ children }) => {
 	const anchors = [
 		{ name: 'About', route: '/' },
 		{ name: 'Resume',	route: '/resume' }

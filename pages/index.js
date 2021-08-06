@@ -1,7 +1,7 @@
 import Title from '../components/Title.js'
 import Paragraph from '../components/Paragraph.js'
-import Link from 'next/link'
 
+import Link from 'next/link'
 import Head from 'next/head'
 
 export default function About() {

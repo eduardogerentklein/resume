@@ -1,6 +1,7 @@
-import Link from 'next/link'
 import Paragraph from '../components/Paragraph.js'
 import Description from '../components/Description.js'
+
+import Link from 'next/link'
 
 const LinkButton = ({ link }) => (
   <div key={link.name} className="flex items-center space-x-1">

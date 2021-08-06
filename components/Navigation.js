@@ -4,11 +4,10 @@ import Button from '../components/Button.js'
 import { useState, useEffect } from 'react'
 import { useTheme } from 'next-themes'
 
-import { Moon } from 'react-feather';
-import { Sun } from 'react-feather';
+import { Moon, Sun } from 'react-feather'
 
 const Navigation = ({ anchors }) => {
-  const { theme, setTheme } = useTheme()
+  const { theme, setTheme } = useTheme('dark')
   const [darkMode, setDarkMode] = useState(false)
 
   useEffect(() => {
