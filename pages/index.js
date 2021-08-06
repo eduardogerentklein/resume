@@ -8,7 +8,7 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>Eduardo Gerent Klein - Interested in design systems, design patterns and JAMstack.</title>
+        <title>Eduardo Gerent Klein - Interested in software development and always looking to learning about the best practices of software development.</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <main>
@@ -19,7 +19,7 @@ export default function About() {
             I studied Software Engineering at PUC - SC.
           </Paragraph>
           <Paragraph>
-            I like to code, biking and hiking. I'm interested in design systems, a11y and JAMstack.
+            I like to code, biking and hiking. I'm also interested in design systems, a11y and JAMstack.
           </Paragraph>
           <Paragraph>
             This is where I write about me and share 

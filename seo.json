@@ -1,14 +1,14 @@
 {
   "title": "Eduardo Gerent Klein",
   "titleTemplate": "%s - Always looking to learning about the best practices of software development.",
-  "description": "Code, biking and hiking. Interested in design systems, design patterns and JAMstack.",
+  "description": "Always looking to learning about the best practices of software development.",
   "openGraph": {
     "type": "website",
     "locale": "en_IE",
     "url": "http://eduardoklein.com/",
     "site_name": "Eduardo Gerent Klein",
     "title": "Eduardo Gerent Klein",
-    "titleTemplate": "Code, biking and hiking. Eduardo Gerent Klein - Interested in design systems, design patterns and JAMstack.",
+    "titleTemplate": "Interested in software development and always looking to learning about the best practices of software development.",
     "images": [
       {
         "url": "https://eduardoklein.com/images/logo.png",
