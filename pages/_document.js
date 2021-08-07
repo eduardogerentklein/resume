@@ -10,9 +10,9 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <link rel="icon" href="../../images/e-logo.png" />
-          <link rel="alternate icon" href="../../images/e-logo.png" />
-          <link rel="mask-icon" href="../../images/e-logo.png" color="#1a202c" />
+          <link rel="icon" type="image/png" href="../../images/e-logo.png" />
+          <link rel="alternate icon" type="image/png" href="../../images/e-logo.png" />
+          <link rel="mask-icon" type="image/png" href="../../images/e-logo.png" color="#1a202c" />
 
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
