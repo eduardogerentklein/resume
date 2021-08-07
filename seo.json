@@ -11,9 +11,9 @@
     "titleTemplate": "Interested in software development and always looking to learning about the best practices of software development.",
     "images": [
       {
-        "url": "https://eduardoklein.com/images/logo.png",
-        "width": 64,
-        "height": 64,
+        "url": "https://eduardoklein.com/images/og-logo.png",
+        "width": 512,
+        "height": 512,
         "alt": "Eduardo's Logo"
       }
     ]
