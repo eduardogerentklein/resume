@@ -1,12 +1,16 @@
-import Title from '../components/Title.js'
-import Paragraph from '../components/Paragraph.js'
-
+import { DefaultSeo } from 'next-seo'
 import Link from 'next/link'
 import Head from 'next/head'
+
+import Paragraph from '../components/Paragraph.js'
+import Title from '../components/Title.js'
+import configSeo from '../seo.json'
+
 
 export default function About() {
   return (
     <>
+      <DefaultSeo {...configSeo} />
       <Head>
         <title>Eduardo Gerent Klein - Interested in software development and always looking to learning about the best practices of software development.</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />

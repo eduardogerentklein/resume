@@ -1,11 +1,11 @@
+import Head from 'next/head'
+
 import Title from '../components/Title.js'
 import Subtitle from '../components/Subtitle.js'
 import Paragraph from '../components/Paragraph.js'
 import Description from '../components/Description.js'
 import LinkButton from '../components/LinkButton.js'
 import ListItem from '../components/ListItem.js'
-
-import Head from 'next/head'
 
 import language from '../data/language'
 import personal from '../data/personal'
@@ -20,7 +20,6 @@ export default function Resume() {
     <>
       <Head>
         <title>Eduardo Gerent Klein - Resume</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <main>
         <Title>{personal.title}</Title>
@@ -32,7 +31,7 @@ export default function Resume() {
           </div>
           <div className="flex flex-col mt-3">
             {personal.links.map(link => (
-              <LinkButton link={link} />
+              <LinkButton link={link} key={link.name} />
             ))}
           </div>
           <div className="flex flex-col mt-3 space-y-3">
@@ -43,17 +42,17 @@ export default function Resume() {
         </section>
         <section className="flex flex-col mt-8">
           <Subtitle>Education</Subtitle>
-          {education.institutes.map((institute, index) => (
-            <>
-              <div key={institute.name} className="flex mt-4 space-x-3">
+          {education.institutes.map(institute => (
+            <div key={institute.name}>
+              <div className="flex mt-4 space-x-3">
                 <Paragraph>{institute.name}</Paragraph>
                 <Paragraph>{institute.city}</Paragraph>
               </div>
-              <ul key={institute.course} className="space-y-2 mt-3 ml-10">
+              <ul className="space-y-2 mt-3 ml-10">
                 <ListItem>{institute.course}</ListItem>
                 <ListItem>{institute.year}</ListItem>
               </ul>
-            </>
+            </div>
           ))}
         </section>
         <section className="mt-8">
@@ -78,16 +77,16 @@ export default function Resume() {
         </section>
         <section className="flex flex-col mt-8">
           <Subtitle>Experience</Subtitle>
-          {experience.companies.map((company, index) => (
-            <>
-              <div key={company.name} className="flex mt-4 space-x-3">
+          {experience.companies.map(company => (
+            <div key={company.name}>
+              <div className="flex mt-4 space-x-3">
                 <Paragraph>{company.position} <Description>/ {company.name} / {company.city}</Description></Paragraph>
               </div>
-              <ul key={company.companyDescription} className="space-y-2 mt-3 ml-10">
+              <ul className="space-y-2 mt-3 ml-10">
                 <ListItem>{company.companyDescription}</ListItem>
                 <ListItem>{company.year}</ListItem>
               </ul>
-            </>
+            </div>
           ))}
         </section>
         <section className="flex flex-col mt-8">
