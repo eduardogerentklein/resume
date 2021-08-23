@@ -6,7 +6,6 @@ import Paragraph from '../components/Paragraph.js'
 import Title from '../components/Title.js'
 import configSeo from '../seo.json'
 
-
 export default function About() {
   return (
     <>
@@ -23,7 +22,7 @@ export default function About() {
             I studied Software Engineering at PUC - SC.
           </Paragraph>
           <Paragraph>
-            I like to code, biking and hiking. I'm also interested in design systems, a11y and JAMstack.
+            I like to code, biking and hiking. Interested in software development and always looking to learning about the best practices of software development.
           </Paragraph>
           <Paragraph>
             This is where I write about me and share 
