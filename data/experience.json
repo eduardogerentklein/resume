@@ -6,14 +6,16 @@
       "city": "Joinville, SC, Brazil",
       "position": "Full stack Developer",
       "year": "2018 / 2020",
-      "companyDescription": "Docspider is a consolidated company specializing in technologies and services for regulatory governance, compliance, document management, etc."
+      "companyDescription": "Docspider is a consolidated company specializing in technologies and services for regulatory governance, compliance, document management, etc.",
+      "roleDescription": ""
     },
     {
       "name": "Fulltech LTDA",
       "city": "Joinville, SC, Brazil",
       "position": "Full stack Developer",
       "year": "2020 / current",
-      "companyDescription": "Fulltech is a Fintech focused on the development and application of financial solutions for companies and entrepreneurs."
+      "companyDescription": "Fulltech is a Fintech focused on the development and application of financial solutions for companies and entrepreneurs.",
+      "roleDescription": "As a Fullstack Developer at Fulltech, I am responsible to build solutions looking for performance, responsive websites, design principles, and patterns. I also worked writing tests using xUnit for unit tests and Cypress for E2E tests."
     }
   ]
 }

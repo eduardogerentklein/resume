@@ -84,6 +84,9 @@ export default function Resume() {
               </div>
               <ul className="space-y-2 mt-3 ml-10">
                 <ListItem>{company.companyDescription}</ListItem>
+                {company.roleDescription && (
+                  <ListItem>{company.roleDescription}</ListItem>
+                )}
                 <ListItem>{company.year}</ListItem>
               </ul>
             </div>
