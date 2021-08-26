@@ -10,7 +10,7 @@
     },
     {
       "name": "Libs / Frameworks",
-      "description": "VueJs, Vuetify, Vuex, NodeJs, ReactJs, NextJs, xUnit, Cypress, .NET Core, .NET Framework"
+      "description": "VueJs, Vuetify, Vuex, ReactJs, NextJs, xUnit, Moq, Cypress, .NET Core, .NET Framework, Fluent Validation, MediatR"
     },
     {
       "name": "Platforms and Tools",
