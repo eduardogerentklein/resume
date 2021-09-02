@@ -1,5 +1,4 @@
 import { Twitter, Linkedin, GitHub } from 'react-feather'
-import Link from 'next/link'
 import { ThemeProvider } from 'next-themes'
 
 import Navigation from './Navigation.js'
@@ -16,15 +15,15 @@ const Layout = ({ children }) => (
       { children }
     </div>
     <Footer>
-      <Link href="https://www.github.com/eduardogerentklein">
+      <a target="_blank" href="https://www.github.com/eduardogerentklein" rel="noopener noreferrer">
         <GitHub className="cursor-pointer hover:text-gray-700" size={20} />
-      </Link>
-      <Link href="https://www.linkedin.com/in/eduardoklein/">
+      </a>
+      <a target="_blank" href="https://www.linkedin.com/in/eduardoklein/" rel="noopener noreferrer">
         <Linkedin className="cursor-pointer hover:text-gray-700" size={20} />
-      </Link>
-      <Link href="https://www.twitter.com/Klein1Eduardo">
+      </a>
+      <a target="_blank" href="https://www.twitter.com/Klein1Eduardo" rel="noopener noreferrer">
         <Twitter className="cursor-pointer hover:text-gray-700" size={20} />
-      </Link>
+      </a>
     </Footer>
   </ThemeProvider>
 )
