@@ -11,7 +11,7 @@ export default function About() {
     <>
       <DefaultSeo {...configSeo} />
       <Head>
-        <title>Eduardo Gerent Klein - Interested in software development and always looking to learning about the best practices of software development.</title>
+        <title>Eduardo Gerent Klein - Interested in software development and always looking to learn about the best practices of software development.</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <main>
@@ -22,7 +22,7 @@ export default function About() {
             I studied Software Engineering at PUC - SC.
           </Paragraph>
           <Paragraph>
-            I like to code, biking and hiking. Interested in software development and always looking to learning about the best practices of software development.
+            I like to code, biking and hiking. Interested in software development and always looking to learn about the best practices of software development.
           </Paragraph>
           <Paragraph>
             This is where I write about me and share 
