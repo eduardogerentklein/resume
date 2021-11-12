@@ -22,7 +22,7 @@ export default function About() {
             I studied Software Engineering at PUC - SC.
           </Paragraph>
           <Paragraph>
-            I like to code, biking and hiking. Interested in software development and always looking to learn about the best practices of software development.
+            I like coding, biking and hiking. Interested in software development and always looking to learn about the best practices of SD.
           </Paragraph>
           <Paragraph>
             This is where I write about me and share 
