@@ -11,7 +11,7 @@ export default function About() {
     <>
       <DefaultSeo {...configSeo} />
       <Head>
-        <title>Eduardo Gerent Klein - Interested in software development and always looking to learn about the best practices of software development.</title>
+        <title>Eduardo Gerent Klein - Software Engineer 🐱‍💻</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <main>

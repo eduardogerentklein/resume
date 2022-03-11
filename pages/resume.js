@@ -19,7 +19,7 @@ export default function Resume() {
   return (
     <>
       <Head>
-        <title>Eduardo Gerent Klein - Resume</title>
+        <title>Eduardo Gerent Klein - Resume 🐱‍👤</title>
       </Head>
       <main>
         <Title>{personal.title}</Title>
@@ -86,6 +86,9 @@ export default function Resume() {
                 <ListItem>{company.companyDescription}</ListItem>
                 {company.roleDescription && (
                   <ListItem>{company.roleDescription}</ListItem>
+                )}
+                {company.techDescription && (
+                  <ListItem>{company.techDescription}</ListItem>
                 )}
                 <ListItem>{company.year}</ListItem>
               </ul>
