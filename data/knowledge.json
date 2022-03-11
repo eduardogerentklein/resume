@@ -2,7 +2,7 @@
   "knowledges": [
     {
       "name": "Languages",
-      "description": "Javascript, C#"
+      "description": "JavaScript, TypeScript, and C#"
     },
     {
       "name": "Databases",
@@ -10,7 +10,7 @@
     },
     {
       "name": "Libs / Frameworks",
-      "description": "VueJs, Vuetify, Vuex, ReactJs, NextJs, xUnit, Moq, Cypress, .NET Core, .NET Framework, Fluent Validation, MediatR"
+      "description": "ReactJS, NextJs, VueJs, xUnit, Moq, Cypress, .NET Core, .NET Framework, Fluent Validation, MediatR"
     },
     {
       "name": "Platforms and Tools",
@@ -18,7 +18,7 @@
     },
     {
       "name": "Others",
-      "description": "CI/CD, APIs REST, Scrum, Kanban, Design Patterns, CQRS, DDD, Robotic, Arduino"
+      "description": "CI/CD, APIs REST, Scrum, Kanban, Design Patterns, DDD, Robotic"
     }
   ] 
 }

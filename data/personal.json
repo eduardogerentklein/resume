@@ -1,7 +1,7 @@
 {
   "title": "Eduardo's Resume",
   "name": "Eduardo Gerent Klein",
-  "address": "Joinville, SC, Brazil",
+  "address": "Joinville, SC - Brazil",
   "email": "eduardo.gklein@gmail.com",
   "links": [
     {
@@ -16,7 +16,7 @@
     }
   ],
   "personalIntros": [
-    "I have experiences ranging from VueJS, AngularJS and ReactJS to messing around with backend on C#.",
-    "I'm interested in software development and always looking to learn how to improve and fine-tune my SD practices."
+    "I have experiences ranging from VueJS and ReactJS to messing around with backend on C#.",
+    "Full-stack Developer with 4+ years of experience coding websites that are used for thousands of people. I'm always looking to learn how to improve and fine-tune my SD practices. "
   ]
 }
