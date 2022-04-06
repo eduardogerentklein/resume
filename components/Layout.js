@@ -15,14 +15,14 @@ const Layout = ({ children }) => (
       { children }
     </div>
     <Footer>
-      <a target="_blank" href="https://www.github.com/eduardogerentklein" rel="noopener noreferrer">
-        <GitHub className="cursor-pointer hover:text-gray-700" size={20} />
+      <a target="_blank" href="https://www.github.com/eduardogerentklein" rel="noopener noreferrer" className="glow-animation">
+        <GitHub className="cursor-pointer" size={20} />
       </a>
-      <a target="_blank" href="https://www.linkedin.com/in/eduardoklein/" rel="noopener noreferrer">
-        <Linkedin className="cursor-pointer hover:text-gray-700" size={20} />
+      <a target="_blank" href="https://www.linkedin.com/in/eduardoklein/" rel="noopener noreferrer" className="glow-animation">
+        <Linkedin className="cursor-pointer" size={20} />
       </a>
-      <a target="_blank" href="https://www.twitter.com/Klein1Eduardo" rel="noopener noreferrer">
-        <Twitter className="cursor-pointer hover:text-gray-700" size={20} />
+      <a target="_blank" href="https://www.twitter.com/Klein1Eduardo" rel="noopener noreferrer" className="glow-animation">
+        <Twitter className="cursor-pointer" size={20} />
       </a>
     </Footer>
   </ThemeProvider>
