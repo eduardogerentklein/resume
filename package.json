@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "framer-motion": "4.1.17",
     "next": "^10.1.2",
     "next-ga": "^2.3.4",
     "next-seo": "^4.23.0",
