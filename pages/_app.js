@@ -1,7 +1,10 @@
 import { motion } from 'framer-motion'
-import Router from 'next/router'
-import withGA from 'next-ga'
 import Head from 'next/head'
+import { useEffect } from 'react'
+import { useRouter } from 'next/router'
+
+import * as gtag from '../lib/gtag'
+import Analytics from '../components/Analytics'
 
 import Layout from '../components/Layout.js'
 
@@ -14,23 +17,38 @@ const variants = {
   exit: { opacity: 0, x: 0, y: -100 },
 }
 
-const App = ({ Component, pageProps, router }) => (
-  <>
-    <Head>
-      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-    </Head>
-    <motion.div 
-      key={router.route}
-      variants={variants} 
-      initial='hidden'
-      animate='enter'
-      exit='exit'
-      transition={{ type: 'linear' }}>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
-    </motion.div>
-  </>
-)
+const App = ({ Component, pageProps, router }) => {
+  const routerHook = useRouter()
 
-export default withGA('UA-2408451141-1', Router)(App)
+  useEffect(() => {
+    const handleRouteChange = url => {
+      gtag.pageview(url)
+    }
+    routerHook.events.on('routeChangeComplete', handleRouteChange)
+    return () => {
+      routerHook.events.off('routeChangeComplete', handleRouteChange)
+    }
+  }, [routerHook.events])
+
+  return (
+    <>
+      <Head>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
+      <motion.div 
+        key={router.route}
+        variants={variants} 
+        initial='hidden'
+        animate='enter'
+        exit='exit'
+        transition={{ type: 'linear' }}>
+        <Layout>
+          <Component {...pageProps} />
+          <Analytics />
+        </Layout>
+      </motion.div>
+    </>
+  )
+}
+
+export default App
