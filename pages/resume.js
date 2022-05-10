@@ -19,7 +19,7 @@ export default function Resume() {
   return (
     <>
       <Head>
-        <title>Eduardo Gerent Klein - Resume 🐱‍👤</title>
+        <title>Eduardo Klein - Resume 🐱‍👤</title>
       </Head>
       <main>
         <Title>{personal.title}</Title>

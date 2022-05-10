@@ -19,7 +19,7 @@ const Navigation = ({ links }) => {
         ))}
       </div>
       <Button onClick={onClick}>
-        {theme === 'dark' ? <Moon className='hover:text-yellow-300' /> : <Sun />}
+        {theme === 'dark' ? <Moon className='hover:text-yellow-300 transition-colors' /> : <Sun />}
       </Button>
     </nav>
   ) 
