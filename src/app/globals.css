@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.glow-animation:hover {
+  color: yellow;
+  text-shadow: 0 0 15px yellow, 0 0 25px yellow;
+  animation: glow 1.5s linear infinite;
+}
+
+@keyframes glow {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+::selection {
+  background-color: #FEF3C7 !important;
+}
