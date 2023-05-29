@@ -21,10 +21,10 @@ export const Navigation = ({ links }: NavigationLinkOptions) => {
         ))}
       </div>
       <Button onClick={handleClick}>
-        {theme === 'dark' ? (
-          <Image src="../images/moon.svg" alt="Moon" width={24} height={24} />
-        ) : (
+        {theme === 'light' ? (
           <Image src="../images/sun.svg" alt="Sun" width={24} height={24} />
+        ) : (
+          <Image src="../images/moon.svg" alt="Moon" width={24} height={24} />
         )}
       </Button>
     </nav>
