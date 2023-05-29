@@ -1,7 +1,7 @@
 'use client'
 
 import { useTheme } from 'next-themes'
-import { Moon, Sun } from 'react-feather'
+import Image from 'next/image'
 
 import { NavigationLinkOptions, NavLink } from '@/types'
 import { Button, NavigationLink } from '@/components'
@@ -16,15 +16,15 @@ export const Navigation = ({ links }: NavigationLinkOptions) => {
   return (
     <nav className="mx-4 mb-16 mt-4 flex max-w-screen-lg items-center justify-between rounded-md bg-gray-200 px-6 py-3 dark:bg-gray-800 dark:bg-opacity-50 md:mx-auto">
       <div className="flex items-center space-x-4">
-        {links.map((link: NavLink, index: number) => (
+        {links?.map((link: NavLink, index: number) => (
           <NavigationLink key={index} route={link.route} name={link.name} />
         ))}
       </div>
       <Button onClick={handleClick}>
         {theme === 'dark' ? (
-          <Moon className="transition-colors hover:text-yellow-300" />
+          <Image src="../images/moon.svg" alt="Moon" width={24} height={24} />
         ) : (
-          <Sun />
+          <Image src="../images/sun.svg" alt="Sun" width={24} height={24} />
         )}
       </Button>
     </nav>

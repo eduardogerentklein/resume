@@ -95,7 +95,7 @@ export const LoveWork = {
 export const Personal = {
   title: "Eduardo's Resume",
   name: 'Eduardo Gerent Klein',
-  address: 'Joinville, SC - Brazil',
+  address: 'Auckland, New Zealand',
   email: 'eduardo.gklein@gmail.com',
   links: [
     {

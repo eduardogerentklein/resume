@@ -27,6 +27,7 @@ export const Illustration = ({
           alt={illustration.alt}
           height={height}
           width={width + 100}
+          priority={true}
         />
       </div>
     </>
