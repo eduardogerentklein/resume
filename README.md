@@ -6,13 +6,13 @@ This repository contains the source code and assets for my portfolio website, wh
 🔖 Table of Contents
 -----------------
 
--   [Introduction](https://github.com/eduardogerentklein/resume#introduction)
--   [Technologies Used](https://github.com/eduardogerentklein/resume#technologies-used)
--   [Features](https://github.com/eduardogerentklein/resume#features)
--   [Installation](https://github.com/eduardogerentklein/resume#installation)
--   [Usage](https://github.com/eduardogerentklein/resume#usage)
--   [Contributing](https://github.com/eduardogerentklein/resume#contributing)
--   [License](https://github.com/eduardogerentklein/resume#license)
+-   [Introduction](https://github.com/eduardogerentklein/resume#-introduction)
+-   [Technologies Used](https://github.com/eduardogerentklein/resume#-technologies-used)
+-   [Features](https://github.com/eduardogerentklein/resume#-features)
+-   [Installation](https://github.com/eduardogerentklein/resume#-installation)
+-   [Usage](https://github.com/eduardogerentklein/resume#-usage)
+-   [Contributing](https://github.com/eduardogerentklein/resume#-contributing)
+-   [License](https://github.com/eduardogerentklein/resume#-license)
 
 💻 Introduction
 ------------
