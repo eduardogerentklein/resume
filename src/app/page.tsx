@@ -7,13 +7,13 @@ export const metadata = {
     where I showcase my expertise and professional experience.`,
   referrer: 'origin-when-cross-origin',
   openGraph: {
-    title: 'Eduardo Gerent Klein',
-    description: 'Software Engineer',
+    title: 'Eduardo Klein',
+    description: `Eduardo's Portfolio - About`,
     url: 'https://eduardoklein.com',
     siteName: 'eduardoklein',
     images: [
       {
-        url: 'https://eduardoklein.com/og-logo.svg',
+        url: 'https://eduardoklein.com/images/og-logo.png',
         width: 512,
         height: 512,
       },
