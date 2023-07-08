@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-import { slate, amber } from 'tailwindcss/colors'
+import { slate, amber, violet, green, emerald } from 'tailwindcss/colors'
 export const darkMode = 'class'
 export const content = [
   './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -17,6 +17,9 @@ export const theme = {
   colors: {
     gray: slate,
     yellow: amber,
+    violet,
+    green,
+    emerald,
   },
 }
 export const variants = {
