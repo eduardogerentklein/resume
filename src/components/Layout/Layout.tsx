@@ -5,21 +5,16 @@ import { ThemeProvider } from 'next-themes'
 import { Twitter, Linkedin, GitHub } from 'react-feather'
 
 import { Footer, Navigation } from '@/components'
-import { NavLink } from '@/types'
+import { Links } from '@/routes'
 
 interface LayoutProps {
   children: ReactNode
 }
 
 export const Layout = ({ children }: LayoutProps) => {
-  const links: NavLink[] = [
-    { name: 'About', route: '/' },
-    { name: 'Resume', route: '/resume' },
-  ]
-
   return (
     <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
-      <Navigation links={links} />
+      <Navigation links={Links} />
       <div className="mx-auto max-w-screen-lg px-4 md:px-0">{children}</div>
       <Footer>
         <a

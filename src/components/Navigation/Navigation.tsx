@@ -25,7 +25,12 @@ export const Navigation = ({ links }: NavigationLinkOptions) => {
     <nav className="mx-4 mb-16 mt-4 flex max-w-screen-lg items-center justify-between rounded-md bg-gray-200 px-6 py-3 dark:bg-gray-800 dark:bg-opacity-50 md:mx-auto">
       <div className="flex items-center space-x-4">
         {links?.map((link: NavLink, index: number) => (
-          <NavigationLink key={index} route={link.route} name={link.name} />
+          <NavigationLink
+            newPage={link.newPage}
+            key={index}
+            route={link.route}
+            name={link.name}
+          />
         ))}
       </div>
       <Button onClick={handleClick}>

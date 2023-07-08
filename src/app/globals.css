@@ -24,6 +24,21 @@ a {
   animation: glow 1.5s linear infinite;
 }
 
+.glow-text, .hover\:glow-text:hover {
+  background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, red, yellow, green);
+  animation: glow 2s linear infinite;
+}
+
+.card {
+  @apply backdrop-blur-[5px] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-lg flex flex-col border-2;
+}
+
+.card-flat {
+  @apply w-72 h-56;
+}
+
 @keyframes glow {
   0% {
     filter: hue-rotate(0deg);
@@ -35,4 +50,17 @@ a {
 
 ::selection {
   background-color: #FEF3C7 !important;
+  @apply text-gray-900;
+}
+
+::-webkit-scrollbar {
+  @apply w-2;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply rounded-lg bg-gray-300 dark:bg-gray-700;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-700 dark:bg-gray-300;
 }
