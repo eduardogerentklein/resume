@@ -20,6 +20,11 @@ export const theme = {
     violet,
     green,
     emerald,
+    primary: {
+      DEFAULT: 'hsl(var(--primary))',
+      foreground: 'hsl(var(--primary-foreground))',
+      hover: 'hsl(var(--primary-hover))',
+    },
   },
 }
 export const variants = {

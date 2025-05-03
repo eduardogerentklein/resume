@@ -24,7 +24,8 @@ a {
   animation: glow 1.5s linear infinite;
 }
 
-.glow-text, .hover\:glow-text:hover {
+.glow-text,
+.hover\:glow-text:hover {
   background-clip: text;
   color: transparent;
   background-image: linear-gradient(to right, red, yellow, green);
@@ -32,11 +33,11 @@ a {
 }
 
 .card {
-  @apply backdrop-blur-[5px] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-lg flex flex-col border-2;
+  @apply flex flex-col rounded-lg border-2 shadow-md dark:shadow-xl shadow-gray-500 dark:shadow-gray-950 backdrop-blur-[5px];
 }
 
 .card-flat {
-  @apply w-72 h-56;
+  @apply h-56 w-72;
 }
 
 @keyframes glow {
@@ -49,7 +50,7 @@ a {
 }
 
 ::selection {
-  background-color: #FEF3C7 !important;
+  background-color: #fef3c7 !important;
   @apply text-gray-900;
 }
 
@@ -63,4 +64,17 @@ a {
 
 ::-webkit-scrollbar-track {
   @apply bg-gray-700 dark:bg-gray-300;
+}
+
+@layer base {
+  :root {
+    --primary: 168, 76%, 42%;
+    --primary-foreground: 0, 0%, 100%;
+    --primary-hover: 168, 76%, 48%;
+  }
+  .dark {
+    --primary: 168, 76%, 42%;
+    --primary-foreground: 0, 0%, 100%;
+    --primary-hover: 168, 76%, 48%;
+  }
 }

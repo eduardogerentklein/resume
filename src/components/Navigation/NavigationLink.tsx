@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation'
 
 import { NavLink } from '@/types'
 
-export const NavigationLink = ({ route, name, newPage }: NavLink) => {
+export const NavigationLink = ({ route, name }: NavLink) => {
   const pathName = usePathname()
   let className =
     'py-1 px-3 rounded-md text-gray-600 dark:text-gray-300 font-medium transition'
@@ -16,16 +16,7 @@ export const NavigationLink = ({ route, name, newPage }: NavLink) => {
 
   return (
     <Link href={route} className={className}>
-      {newPage ? (
-        <>
-          {name}
-          <small className="glow-text ml-1 hidden text-center text-xs font-bold md:inline">
-            NEW!
-          </small>
-        </>
-      ) : (
-        <>{name}</>
-      )}
+      {name}
     </Link>
   )
 }

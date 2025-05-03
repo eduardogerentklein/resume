@@ -1,8 +1,3 @@
-export const AlsoLike = {
-  title: 'Also Like',
-  text: 'Full-stack development and other more diverse coding endeavors with the C# programming language.',
-}
-
 export const Education = {
   title: 'Education',
   institutes: [
@@ -19,84 +14,167 @@ export const Experience = {
   title: 'Experience',
   companies: [
     {
+      name: 'Accenture',
+      city: 'Auckland, New Zealand',
+      position: 'Software Engineer',
+      year: '2024 - Present',
+      basicDescription:
+        'Worked with a banking client in the Lending POD, focusing on API modernization, cloud automation, and legacy application enhancements.',
+      roleDescription:
+        'Led the migration of an API Gateway from Apigee to Kong, significantly reducing operational costs and improving efficiency.',
+      techDescription:
+        'Developed and automated cloud-based solutions for patching and certificate renewals using Red Hat Ansible Automation Platform and Octopus Deploy, enhancing security and system reliability.',
+      additionalDescription:
+        'Maintained and implemented new features in a legacy Java system, ensuring stability and continued business value for bankers.',
+    },
+    {
+      name: 'Solnet Solutions',
+      city: 'Auckland, New Zealand',
+      position: 'Software Engineer',
+      year: '2023 - 2024',
+      basicDescription:
+        'Maintained and enhanced SpecMojo, a SaaS business management platform platform.',
+      roleDescription:
+        'Enhanced SpecMojo SaaS platform by developing new features, rebuilding the UI with ShadCN, and integrating RTK Query to efficiently handle asynchronous operations in Redux and implemented Stripe for payment processing, ensuring secure and efficient transactions',
+      additionalDescription:
+        'Collaborated closely with front-end and back-end teams to improve application performance and usability.',
+      techDescription:
+        'Tech stack: ReactJs, TypeScript, Redux, Redux-Saga, RTK Query, Axios, ShadCn, Stripe, Microsoft Azure. Also collaborated on the back end using C#, .NET.',
+    },
+    {
       name: 'Fulltech LTDA',
       city: 'Joinville, SC - Brazil',
       position: 'Full-stack Developer',
-      year: '2020 - Current',
-      companyDescription:
-        'Fulltech is a Fintech focused on the development and application of financial solutions for companies and entrepreneurs. The company works together with BMP Money Plus, a digital bank based in São Paulo, Brazil. As a company, Fulltech guarantees the appropriate technology and infrastructure so that all operations are performed correctly.',
+      year: '2020 - 2023',
+      basicDescription:
+        'Built high-performance web apps for fintech clients using C#, .NET Core, and Vue.js.',
       roleDescription:
-        'In my role as a Full-stack Developer at Fulltech, I am responsible for creating high-performance and responsive web solutions, implementing design principles and patterns to ensure optimal user experience. In addition, I have extensive experience in writing tests using xUnit for unit testing, Cypress for end-to-end testing, and working with some AWS services.',
+        'Integrated DDD, CQRS, and RESTful APIs using Entity Framework and Dapper.',
+      additionalDescription:
+        'Worked with Azure DevOps and AWS for deployments.',
       techDescription:
-        'At Fulltech, I operate using the following tech stack: JavaScript, VueJs, CSS3, C#, .NET Core, API REST, Entity Framework, Dapper, Fluent Validation, MSSQL Server, CQRS, DDD, Azure DevOps, Clean Code, Design Patterns. I also worked with Scrum and Kanban methodologies.',
+        'Tech stack: JavaScript, VueJs, CSS3, C#, .NET Core, API REST, Entity Framework, Dapper, Fluent Validation, DynamoDB, Cosmos DB, MSSQL Server, Azure DevOps, Clean Code, Design Patterns. I also worked with Scrum and Kanban methodologies.',
     },
     {
       name: 'Docspider Software S.A',
       city: 'Joinville, SC - Brazil',
       position: 'Full-stack Developer',
       year: '2018 - 2020',
-      companyDescription:
-        "Docspider is a banking company that's specialized in technologies and services for regulatory governance, compliance, document management, and automation process for business.",
+      basicDescription:
+        'The position of Full-stack Developer at Docspider was my first job, and this position given to me involves working directly on the main product and also on custom projects, where the customer can ask for a customized version of the main product.',
       roleDescription:
-        'The position of Full-stack Developer at Docspider was my first job, and this position given to me involves working directly on the main product and also on custom projects, where the customer can ask for a customized version of the main product. When I joined the company, I worked on system maintenance, fixing bugs or minor changes reported, and implementing new system features.',
+        'When I joined the company, I worked on system maintenance, fixing bugs or minor changes reported, and implementing new system features.',
       techDescription:
-        'During this experience, I was able to work and build solutions using technologies such as JQuery, HTML5, CSS3, JavaScript, C#, ASP.NET Framework, and MS SQL Server.',
+        'Tech stack: C#, ASP.NET Framework, MVC, JQuery, HTML5, CSS3, JavaScript, and MS SQL Server.',
     },
   ],
 }
 
-export const Knowledge = [
+export const Skills = [
   {
-    name: 'Languages',
-    description: 'JavaScript, TypeScript, and C#',
+    name: 'Frontend',
+    technologies: [
+      'JavaScript',
+      'TypeScript',
+      'ReactJs',
+      'Next.js',
+      'VueJs',
+      'HTML5',
+      'CSS3',
+      'Tailwind CSS',
+    ],
   },
   {
-    name: 'Databases',
-    description: 'SQL Server',
+    name: 'Backend',
+    technologies: [
+      'C#',
+      '.NET Core',
+      '.NET',
+      '.NET Framework',
+      'ASP.NET MVC',
+      'RESTful APIs',
+      'Entity Framework',
+      'Microservices',
+      'CQRS',
+      'DDD',
+      'Dapper',
+      'MediatR',
+    ],
   },
   {
-    name: 'Libs / Frameworks',
-    description:
-      'ReactJs, NextJs, Tailwind CSS, VueJs, xUnit, Moq, Cypress, .NET Core, .NET Framework, Fluent Validation, MediatR and others...',
+    name: 'Database',
+    technologies: [
+      'SQL Server',
+      'PostgreSQL',
+      'Oracle',
+      'Redis',
+      'MongoDB',
+    ],
+  },
+  {
+    name: 'DevOps',
+    technologies: [
+      'Azure',
+      'Octopus Deploy',
+      'Red Hat Ansible Automation',
+      'AWS (Lambda, S3)',
+    ],
+  },
+  {
+    name: 'Testing',
+    technologies: [
+      'xUnit',
+      'Moq',
+      'Fluent Assertions',
+      'Jest',
+      'Cypress',
+    ],
   },
   {
     name: 'Platforms and Tools',
-    description: 'Git, Azure DevOps, Heroku, AWS (Lambda, S3)',
+    technologies: [
+      'Git',
+      'GitHub',
+      'Azure DevOps',
+      'Jira',
+      'Bitbucket',
+      'Visual Studio',
+      'VS Code',
+      'Figma',
+      'Postman',
+      'Insomnia',
+    ],
   },
   {
     name: 'Others',
-    description: 'CI/CD, APIs REST, Scrum, Kanban, Design Patterns, DDD',
+    technologies: [
+      'Design Patterns',
+      'DDD',
+      'Clean Architecture',
+      'CI/CD',
+      'Modular Monolith',
+      'Splunk',
+      'Scrum',
+      'Kanban',
+    ],
   },
-  {
-    name: 'Current Learning / Improving Skills',
-    description: 'ReactJs, NextJs, TypeScript',
-  },
-]
+];
+
 
 export const Language = {
   languages: [
     {
-      name: 'Portuguese',
-      description: 'Native',
+      name: 'English',
+      description: 'Advanced',
     },
     {
-      name: 'English',
-      description:
-        'Intermediary (speaking and listening) / Advanced (reading and writing)',
+      name: 'Portuguese',
+      description: 'Native',
     },
   ],
 }
 
-export const LoveWork = {
-  title: 'Love working with',
-  text: '.NET Environment and some front-end stuff like ReactJs. I love to learn and follow the best software development practices.',
-}
-
 export const Personal = {
-  title: "Eduardo's Resume",
-  name: 'Eduardo Gerent Klein',
-  address: 'Auckland, New Zealand',
-  email: 'eduardo.gklein@gmail.com',
   links: [
     {
       name: 'LinkedIn',
@@ -104,15 +182,9 @@ export const Personal = {
       description: '',
     },
     {
-      name: 'Github',
+      name: 'GitHub',
       href: 'https://www.github.com/eduardogerentklein',
       description: '',
     },
-  ],
-  personalIntros: [
-    'I have experiences ranging from VueJS and AngularJS to messing around with backend on C#.',
-    `As a Software Engineer with 5+ years of experience in full-stack development, 
-    I have focused on building and maintaining web applications with a strong background in JavaScript and C#. 
-    I am constantly seeking to enhance my software development practices, keeping myself updated with the latest trends and technologies in the field.`,
   ],
 }

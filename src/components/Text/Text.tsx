@@ -11,12 +11,12 @@ export const Text = ({ type, children }: TextProps) => {
       <span className="font-regular text-sm text-gray-500">{children}</span>
     ),
     subtitle: (
-      <h2 className="text-2xl font-semibold italic text-gray-900 dark:text-yellow-300">
+      <h2 className="text-2xl font-semibold italic text-primary dark:text-primary-hover">
         {children}
       </h2>
     ),
     title: (
-      <h1 className="whitespace-normal text-5xl font-bold text-gray-900 dark:text-yellow-300 md:whitespace-nowrap">
+      <h1 className="whitespace-normal text-5xl font-bold text-primary dark:text-primary md:whitespace-nowrap">
         {children}
       </h1>
     ),
