@@ -1,8 +1,10 @@
-import { Illustration, Text } from '@/components'
+import { Illustration, ListItem, Text } from '@/components'
+import { Education, Language } from '@/data'
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Eduardo Klein - Software Engineer 🐱‍💻',
+  metadataBase: new URL('https://eduardoklein.com'),
+  title: 'Eduardo Klein | Software Engineer',
   description: `Welcome to my Software Engineer portfolio website, 
     where I showcase my expertise and professional experience.`,
   referrer: 'origin-when-cross-origin',
@@ -30,31 +32,46 @@ export default function Home() {
         <Text type="title">Hi, I&apos;m Eduardo Klein</Text>
         <div className="mt-8 space-y-2">
           <Text type="paragraph">
-            I am a Software Engineer from Joinville, Brazil.
+            Software Engineer with 6+ years of experience / Based in Auckland, New Zealand
+          </Text>
+          <Text type='paragraph'>
+            Passionate about clean code, modern frameworks, APIs, cloud technologies, 
+            collaborative development, and continuous improvement.
           </Text>
           <Text type="paragraph">
-            Currently living in Auckland - New Zealand.
-          </Text>
-          <Text type="paragraph">
-            I studied Software Engineering at PUC - SC.
-          </Text>
-          <Text type="paragraph">I like travel, nature and games.</Text>
-          <Text type="paragraph">
-            I am a passionate and dedicated Software Engineer with a
-          </Text>
-          <Text type="paragraph">
-            strong background in developing innovative solutions
-          </Text>
-          <Text type="paragraph">
-            This is where I write about me and share
             <Link
-              href="/resume"
-              className="dark:bg-gray-00 rounded-md p-1 transition-colors hover:bg-gray-200 dark:hover:bg-gray-700"
+              href="/experience"
+              className="dark:bg-gray-800 rounded-md p-1 transition-colors hover:bg-gray-200 dark:hover:bg-gray-700"
             >
-              my resume.
+              Check out my experiences{' '}
             </Link>
           </Text>
         </div>
+        <section className="mt-8 flex flex-col">
+          <Text type="subtitle">Education</Text>
+          {Education.institutes.map((institute) => (
+            <div key={institute.name} className="mt-4 flex flex-col space-y-3">
+              <div className="flex space-x-3">
+                <Text type="paragraph">{institute.name}</Text>
+                <Text type="paragraph">{institute.city}</Text>
+              </div>
+              <ul className="ml-10 mt-3 space-y-2">
+                <ListItem>{institute.course}</ListItem>
+                <ListItem>{institute.year}</ListItem>
+              </ul>
+            </div>
+          ))}
+        </section>
+        <section className="mt-8 flex flex-col">
+          <Text type="subtitle">Language</Text>
+          {Language.languages.map((item) => (
+            <div key={item.name} className="mt-4 flex flex-col space-y-3">
+              <Text type="paragraph">
+                {item.name}: <Text type="description">{item.description}</Text>
+              </Text>
+            </div>
+          ))}
+        </section>
       </div>
       <Illustration name="programming" />
     </main>

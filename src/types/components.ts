@@ -1,3 +1,5 @@
+import { ReactElement } from "react"
+
 export type ButtonLinkOptions = {
   href: string
   name: string
@@ -7,9 +9,9 @@ export type ButtonLinkOptions = {
 export type NavLink = {
   route: string
   name: string
-  newPage?: boolean
 }
 
-export type NavigationLinkOptions = {
-  links: NavLink[]
+export type SocialMediaTypes = {
+  GitHub: ReactElement
+  LinkedIn: ReactElement
 }
