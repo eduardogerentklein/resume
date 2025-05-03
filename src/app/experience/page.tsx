@@ -1,5 +1,3 @@
-'use client'
-
 import { Text } from '@/components'
 import ExperienceList from './ExperienceList'
 
